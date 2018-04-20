@@ -16,7 +16,7 @@
     ],
     "data": [
         "wizard/invoice_batch_process_view.xml",
-        "views/invoice_view.xml"
+        # "views/invoice_view.xml"
     ],
     "installable": True,
 }

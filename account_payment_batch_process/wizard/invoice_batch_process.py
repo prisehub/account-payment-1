@@ -336,13 +336,13 @@ class AccountRegisterPayments(models.TransientModel):
         return {
             'name': _('Payments'),
             'view_type': 'form',
-            'view_mode': 'tree',
+            'view_mode': 'form',
             'res_model': 'account.payment',
-            'view_id': view_id,
+            'res_id': payment_ids[0],
+            # 'view_id': view_id,
             'type': 'ir.actions.act_window',
-            'target': 'new',
             'domain': "[('id','in',%s)]" % (payment_ids),
-            'context': {'group_by': 'partner_id'}
+            # 'context': {'group_by': 'partner_id'}
         }
 
     @api.multi
